@@ -9,4 +9,10 @@ class Airline extends Model
 {
     /** @use HasFactory<\Database\Factories\AirlineFactory> */
     use HasFactory;
+    protected $primaryKey = 'airline_id';
+
+    protected $fillable = [
+        'name',
+        'country',
+    ];
 }
